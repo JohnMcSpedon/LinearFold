@@ -14,8 +14,8 @@ objects=bin/linearfold_v bin/linearfold_c
 linearfold: src/LinearFold.cpp $(DEPS) 
 		chmod +x linearfold draw_circular_plot
 		mkdir -p bin
-		$(CC) src/LinearFold.cpp $(CFLAGS) -Dlv -Dis_cube_pruning -Dis_candidate_list -o bin/linearfold_v 
-		$(CC) src/LinearFold.cpp $(CFLAGS) -Dis_cube_pruning -Dis_candidate_list -o bin/linearfold_c
+		$(CC) src/LinearFold.cpp $(CFLAGS) -Dlv -Dis_cube_pruning -Dis_candidate_list -o /usr/bin/linearfold_v 
+		$(CC) src/LinearFold.cpp $(CFLAGS) -Dis_cube_pruning -Dis_candidate_list -o /usr/bin/linearfold_c
 
 clean:
 	-rm $(objects)
